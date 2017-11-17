@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="oo">
+                <input type="checkbox" class="sss">
+            </td>
+            <td class="qq">
+                <input type="text" class="www">
+            </td>
+        </tr>
+        <tr>
+            <td class="oo">
+                <input type="checkbox" class="sss">
+            </td>
+            <td  class="qq">
+                <input type="text" class="www">
+            </td>
+        </tr>
+        <tr>
+            <td class="oo">
+                <input type="checkbox" class="sss">
+            </td>
+            <td  class="qq">
+                <input type="text" class="www">
+            </td>
+        </tr>
+    </table>
+     <button>按钮</button>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $('button').click(function(){
+         $('.sss:checked').each(function(){
+            console.log($(this));
+                var dd=$(this).parent('td').siblings('.qq').children('.www').val();
+                console.log(dd);
+
+
+        })
+    })
+
+</script>
+</html>

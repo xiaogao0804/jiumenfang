@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/shoppingCart.css">
+    <title>购物车</title>
+</head>
+<body>
+  <div class="contain">
+      <div class="cart-foods-list clearFix">
+          <div id="9" class="cart-foods-wrap">
+          <div class="cart-foods-normal" style="position: relative;">
+              <div class="cart-foods clearFix">
+                  <!--选择按钮-->
+                  <div class="checkbox">
+                      <i class="fa fa-circle-thin" style="display: none"></i>
+                      <i class="fa fa-check-circle" style="display: block"></i>
+                  </div>
+                  <!--商品图片-->
+                  <img src="../image/banner.jpg" alt="">
+                  <!--名称价格-->
+                  <div class="cart-foods-info">
+                      <p>香菇炸酱</p>
+                      <p class="cart-foods-price">
+                          <i class="fa fa-rmb">12</i>
+                      </p>
+                  </div>
+                  <!--增减数量-->
+                  <div class="change-num clearFix">
+                      <p class="foods-subtract">-</p>
+                      <p class="foods-num">1</p>
+                      <p class="foods-add">+</p>
+                  </div>
+              </div>
+              <div class="cart-foods-btn">
+                  <span>删除</span>
+              </div>
+          </div>
+      </div>
+          <div id='8' class="cart-foods-wrap">
+              <div class="cart-foods-normal" style="position: relative;">
+                  <div class="cart-foods clearFix">
+                      <!--选择按钮-->
+                      <div class="checkbox">
+                          <i class="fa fa-circle-thin"></i>
+                          <i class="fa fa-check-circle" id="1"></i>
+                      </div>
+                      <!--商品图片-->
+                      <img src="../image/banner.jpg" alt="">
+                      <!--名称价格-->
+                      <div class="cart-foods-info">
+                          <p>香菇炸酱</p>
+                          <p class="cart-foods-price">
+                              <i class="fa fa-rmb">12</i>
+                          </p>
+                      </div>
+                      <!--增减数量-->
+                      <div class="change-num clearFix">
+                          <p class="foods-subtract">-</p>
+                          <p class="foods-num">1</p>
+                          <p class="foods-add">+</p>
+                      </div>
+                  </div>
+                  <div class="cart-foods-btn">
+                      <span>删除</span>
+                  </div>
+              </div>
+          </div>
+          <div id='7' class="cart-foods-wrap">
+              <div class="cart-foods-normal" style="position: relative;">
+                  <div class="cart-foods clearFix">
+                      <!--选择按钮-->
+                      <div class="checkbox">
+                          <i class="fa fa-circle-thin"></i>
+                          <i class="fa fa-check-circle"></i>
+                      </div>
+                      <!--商品图片-->
+                      <img src="../image/banner.jpg" alt="">
+                      <!--名称价格-->
+                      <div class="cart-foods-info">
+                          <p>香菇炸酱</p>
+                          <p class="cart-foods-price">
+                              <i class="fa fa-rmb">12</i>
+                          </p>
+                      </div>
+                      <!--增减数量-->
+                      <div class="change-num clearFix">
+                          <p class="foods-subtract">-</p>
+                          <p class="foods-num">1</p>
+                          <p class="foods-add">+</p>
+                      </div>
+                  </div>
+                  <div class="cart-foods-btn">
+                      <span>删除</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--底部全选、结算-->
+      <div class="cart-accounts clearFix">
+         <div class="checkboxAll">
+             <i class="fa fa-circle-thin"></i>
+             <i class="fa fa-check-circle"></i>
+             <span>全选</span>
+         </div>
+          <div class="priceAll">
+              <p class="price">
+                  合计:
+                  <i class="fa fa-rmb"> 0.00</i>
+              </p>
+              <p class="notCar">不含运费</p>
+          </div>
+          <div class="accounts">
+              结算
+          </div>
+      </div>
+      <div class="accounts-hint">
+          <span class="account-hint-add">您还没有购物车哦!</span>
+          <span class="account-hint-select">您还没有选择小酱仙哦！</span>
+      </div>
+  </div>
+</body>
+<script src="../../../../publicJs/zepto.js"></script>
+<script src="../js/shoppingCart.js"></script>
+<script>
+    //获取选中的商品的值
+   /* $('.accounts').click(function(){
+    var arr=[];
+    $('.fa-check-circle').each(function(){
+        if($(this).css('display')=="block"){
+            arr.push($(this));
+            var id=$(this).attr("id");
+        }
+        console.log(arr);
+        console.log(id);
+    })
+})*/
+
+    //结算小提示
+/*    $('.accounts').on('click',function(){
+        $('.account-hint-add').css('display','block').fadeOut(5000);
+
+//        $('.account-hint-select').css('display','block').fadeOut(5000);
+    })*/
+
+    //点击加减获取id
+/*    $('.foods-subtract').click(function(){
+        var com_id=$(this).next('.foods-num').html();
+        console.log(com_id);
+    });*/
+
+    $('.foods-subtract').each(function(){
+        $(this).click(function(){
+            var com_id=$(this).next('.foods-num').html();
+            console.log(com_id);
+        })
+    })
+</script>
+</html>

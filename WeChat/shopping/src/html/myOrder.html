@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../../../../publicCss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/myOrder.css">
+    <title>我的订单</title>
+</head>
+<body>
+   <div class="wrap">
+       <div class="contain">
+           <!--<div class="header">
+               <i class="fa fa-long-arrow-left fa-2x"></i>
+               <span>我的订单</span>
+               <i class="fa fa-remove"></i>
+           </div>-->
+           <!--订单详情-->
+           <!--已支付订单-->
+           <div class="con-list-wrap">
+               <div class="con-list">
+                   <div class="con-list-item clearFix">
+                       <div class="item-num">
+                           订单号：<span class="item-num-time"></span>
+                       </div>
+                       <div class="item-price">
+                           <i class="fa fa-rmb"></i><span>30</span>
+                       </div>
+                   </div>
+                   <div class="con-list-item clearFix">
+                       <div class="item-num item-items">
+                           商品：<span class="item-name">肉丁炸酱</span>X<span>1</span>&nbsp;
+                           <span class="item-name">肉丁炸酱</span>X<span>1</span>&nbsp;
+                           <span class="item-name">组合炸酱</span><span>（肉丁</span>X<span>2</span><span>+鸡蛋）</span>
+                       </div>
+                   </div>
+                   <div class="con-list-item clearFix">
+                       <div class="item-num item-items">
+                           邮寄地址：<span>北京市，朝阳区，住邦2000</span>
+                       </div>
+                   </div>
+                   <div class="con-list-item clearFix">
+                       <div class="item-num item-items clearFix">
+                           <p class="recipient">收件人：<span>李xx</span></p>
+                           <p class="tel">电话：<span>123456789</span></p>
+                       </div>
+                   </div>
+                   <!--去支付-->
+                   <div class="pay-btn clearFix">
+                       <p class="pay-state">状态：已支付</p>
+                       <p class="refund-btn">退款</p>
+                   </div>
+               </div>
+           </div>
+           <!--已发货订单-->
+           <div class="con-list-wrap">
+               <div class="con-list">
+                   <div class="con-list-item clearFix">
+                       <div class="item-num">
+                           订单号：<span class="item-num-time"></span>
+                       </div>
+                       <div class="item-price">
+                           <i class="fa fa-rmb"></i><span>30</span>
+                       </div>
+                   </div>
+                   <div class="con-list-item clearFix">
+                       <div class="item-num item-items">
+                           商品：<span class="item-name">肉丁炸酱</span>X<span>1</span>&nbsp;
+                           <span class="item-name">肉丁炸酱</span>X<span>1</span>&nbsp;
+                           <span class="item-name">组合炸酱</span><span>（肉丁</span>X<span>2</span><span>+鸡蛋）</span>
+                       </div>
+                   </div>
+                   <div class="con-list-item clearFix">
+                       <div class="item-num item-items">
+                           邮寄地址：<span>北京市，朝阳区，住邦2000</span>
+                       </div>
+                   </div>
+                   <div class="con-list-item clearFix">
+                       <div class="item-num item-items clearFix">
+                           <p class="recipient">收件人：<span>李xx</span></p>
+                           <p class="tel">电话：<span>123456789</span></p>
+                       </div>
+                   </div>
+                   <!--已发货-->
+                   <div class="shipments-btn">
+                       <p class="pay-state">状态：已发货</p>
+                       <p class="refund-btn">退货</p>
+                   </div>
+                   <div class="clear"></div>
+                   <div class="logistics-state" style="display:block" id="2">
+                       物流信息：天天快递，订单号：<span>98989890</span>
+                   </div>
+               </div>
+           </div>
+           <!--弹窗-->
+           <!--<div class="mask-pop">
+               <div class="pop-info clearFix">
+                   <p class="pop-txt">亲，您确定选择退货吗？</p>
+                   <p class="pop-cancel">取消</p>
+                   <p class="pop-confirm">确定</p>
+               </div>
+              &lt;!&ndash; <div class="pop-del">
+                   <i class="fa fa-remove fa-2x"></i>
+               </div>&ndash;&gt;
+           </div>-->
+          <!-- 物流信息弹窗-->
+           <!--<div class="mask-pop-logistics">
+               <div class="pop-info clearFix">
+                   <p class="pop-txt">单号:1111111</p>
+                   <p class="pop-cancel">物流:jjjj</p>
+                   <p class="pop-confirm"></p>
+               </div>
+                <div class="pop-del">
+                    <i class="fa fa-remove fa-2x"></i>
+                </div>
+           </div>-->
+       </div>
+   </div>
+</body>
+<script src="../../../../publicJs/zepto.js"></script>
+<script src="../js/order.js"></script>
+<!--<script>
+    $(document).ready(function(){
+        var aa=$('.logistics-state').attr('id');
+        console.log(aa);
+        if(aa==2){
+            $('.logistics-state').css('display','block');
+        }else{
+            $('.logistics-state').css('display','none');
+        }
+      });
+</script>-->
+</html>

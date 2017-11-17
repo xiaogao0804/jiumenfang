@@ -1,0 +1,11 @@
+.wrap{
+    width: 100%;
+}
+.wrap .header{
+    width:100%;
+    background-color: #000;
+}
+.header .logo-wrap{
+    width:50%;
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../../../publicJs/flexible.js"></script>
+    <link rel="stylesheet" href="../../../../publicCss/reset.css">
+    <link rel="stylesheet" href="../css/getCoupon.css">
+    <title>二维码</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="get-coupon-wrap">
+        <p class="coupon-company" style="margin-bottom: 0.5rem">北京九门坊商贸股份有限公司</p>
+        <p class="coupon-name" style="margin-bottom: 0.5rem">老北京炸酱</p>
+        <div class="cart-bag">
+            <div id="qrcode"></div>
+            <div id="message" style="width: 100%;font-size:0.48rem;text-align: center;margin-top: 0.35rem;"></div>
+        </div>
+        <p class="coupon-time" style="text-align: center;color:rgb(51,51,51)">
+        </p>
+        <p class="coupon-time" style="text-align: center;color:rgb(51,51,51)"> 点击出示给店员扫描二维码即可使用
+        </p>
+        <div class="coupon-logo">
+            logo
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../../../publicJs/jquery-1.8.3.js"></script>
+<script src="../../../../publicJs/qrcode.js"></script>
+<script src="../../../../publicJs/jquery.qrcode.js"></script>
+<script>
+    //生成二维码
+    window.onload=() => {
+        var res="";
+        for(var i=0;i<14;i++){
+            var num=Math.floor(Math.random()*10);
+            res+=num;
+        }
+         //console.log(res);
+        $("#message").html(res);
+
+        function generateQRCode(){
+
+            var contents=$('#message').val();
+            if ($("canvas")) {
+                $("canvas").remove();
+            }
+            jQuery('#qrcode').qrcode({
+                text: res
+            });
+        }
+        generateQRCode();
+    }
+</script>
+</html>
