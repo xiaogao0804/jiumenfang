@@ -6,6 +6,8 @@
     height:100px;
     background-color: #000;
     vertical-align: 100px;
+    position: fixed;
+    z-index: 9999;
 }
 .header .logo-wrap{
     width:45%;

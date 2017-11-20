@@ -7,6 +7,7 @@
     <meta name="description" content="九门坊，小酱仙，酱，面，料理">
     <link rel="stylesheet" href="../../publicCss/reset.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>九门坊官网</title>
 </head>
 <body>
@@ -35,6 +36,22 @@
                </ul>
            </div>
        </div>
+       <div class="content">
+           <img src="image/brand.png" alt="">
+       </div>
+       <div class="top-wrap">
+           <img src="image/top.png" alt="" class="returnTop">
+       </div>
+       <div class="footer">
+           <img src="image/footer.png" alt="">
+       </div>
    </div>
 </body>
+<script src="../../publicJs/jquery-3.2.1.min.js"></script>
+<script>
+    $('.returnTop').click(function(){
+        $('body,html').animate({ scrollTop: 0 }, 500);
+        return false;
+    })
+</script>
 </html>
