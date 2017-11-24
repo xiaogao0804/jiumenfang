@@ -20,7 +20,6 @@ $('.pappers-contain').height(winHeight);
       console.log(image);
       $(this).parent().empty().append(`<img src=${image} />`)
   })*/
-
 var upload = function(c, d){
     "use strict";
     var $c = document.querySelector(c),
@@ -33,3 +32,20 @@ var upload = function(c, d){
     };
    $(c).siblings('span').remove();
 };
+
+//从相册选择照片
+/*
+var image = '';
+function selectImage(file,f) {
+    var $f=document.querySelectorAll(f);
+    if (!file.files || !file.files[0]) {
+        return;
+    }
+    var reader = new FileReader();
+    reader.onload = function (evt) {
+        $f.setAttribute("src", evt.target.result);
+       // document.getElementById('image').src = evt.target.result;
+        image = evt.target.result;
+    }
+    reader.readAsDataURL(file.files[0]);
+}*/

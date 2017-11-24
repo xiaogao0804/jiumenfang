@@ -34,12 +34,12 @@
             </div>
             <ul class="pappers-picture">
                 <li id="#0">
-                    <input id="fileBtn" type="file" onchange="upload('#fileBtn', '#img');" accept="image/*" capture="camera" value=""/>
+                    <input id="fileBtn" type="file" onchange="upload('#fileBtn', '#img');" />
                     <img src="" id="img" style="width:100%;height:100%;"/>
                     <span>+</span>
                 </li>
                 <li id="#1">
-                    <input id="fileBtn2" type="file" onchange="upload('#fileBtn2', '#img2');" accept="image/*" capture="camera"/>
+                    <input id="fileBtn2" type="file" onchange="upload('#fileBtn2', '#img2');"/>
                     <img src="" id="img2" style="width:100%;height:100%;"/>
                     <span>+</span>
                 </li>
@@ -73,6 +73,23 @@
 </body>
 <script src="../../../publicJs/jquery-3.2.1.min.js"></script>
 <script src="js/salesReturn.js"></script>
+<script>
+/*    var image = '';
+    function selectImage(file) {
+        if (!file.files || !file.files[0]) {
+            return;
+        }
+        var reader = new FileReader();
+        reader.onload = function (evt) {
+            var nn=document.getElementById('img2');
+            nn.src = evt.target.result;
+            image = evt.target.result;
+
+
+        }
+        reader.readAsDataURL(file.files[0]);
+    }*/
+</script>
 <!--<script>
     $(document).on('click','#0',function(){
         var a=$("#fileBtn").val();

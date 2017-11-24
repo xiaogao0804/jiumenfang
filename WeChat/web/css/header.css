@@ -40,7 +40,7 @@
 }
 .top-wrap img{
     position: relative;
-    top:-35px;
+    top:5px;
     cursor: pointer;
     z-index: 999;
 }
@@ -48,7 +48,6 @@
 /*底部*/
 .footer{
     width:100%;
-
 }
 .footer img{
     width:100%;
